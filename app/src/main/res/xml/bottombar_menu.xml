@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@mipmap/ic_recents"
+        id="@+id/tab0"
+        title="首页" />
+    <tab
+        badgeHidesWhenActive="false"
+        icon="@mipmap/ic_favorites"
+        id="@+id/tab1"
+        title="热点" />
+    <tab
+        badgeHidesWhenActive="false"
+        icon="@mipmap/ic_nearby"
+        id="@+id/tab2"
+        title="会员" />
+    <tab
+        badgeHidesWhenActive="false"
+        icon="@mipmap/ic_friends"
+        id="@+id/tab3"
+        title="频道" />
+    <tab
+        badgeHidesWhenActive="false"
+        icon="@mipmap/ic_restaurants"
+        id="@+id/tab4"
+        title="我的" />
+</tabs>
+
+    <!--
+    inActiveColor：
+    未被选择时，标签的颜色，作用于 icon 和 title。
+    activeColor：
+    被选择时，标签的颜色，作用于 icon 和 title，与上面相对应。
+    barColorWhenSelected：
+    当该标签被选择时，整个 BottomBar 的背景色。（就是一点，整个底部渐变的那个颜色）
+    badgeBackgroundColor：
+    设置 Badges 的背景色，就是右上角显示数字那个。
+    badgeHidesWhenActive：
+    选择此选项卡时是否应该隐藏徽章，默认为true。
+
+    作者：Wing_Li
+    链接：https://www.jianshu.com/p/2bafd1bbb21b
+    來源：简书
+    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+    --><!--
+     barColorWhenSelected="#FE3D81"
+    barColorWhenSelected="#5D3C35"
+     barColorWhenSelected="#7B1FA2"
+      barColorWhenSelected="#FF5252"
+       barColorWhenSelected="#FF9800"
+        inActiveColor="#00FF00"
+         inActiveColor="#00FF00"
+         badgeHidesWhenActive="true"
+           badgeHidesWhenActive="true"
+            badgeHidesWhenActive="true"
+             badgeBackgroundColor="#ff00ddff"
+             badgeBackgroundColor="#ff00ddff"
+
+              activeColor="#0FA0FB"
+    -->

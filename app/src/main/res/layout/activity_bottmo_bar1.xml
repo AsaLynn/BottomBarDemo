@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar" />
+
+    <!-- 参数详细解释 稍后会有 -->
+    <!--app:bb_badgesHideWhenActive="false"-->
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_behavior="underNavbar"
+        app:bb_showShadow="false"
+        app:bb_activeTabColor="#0FA0FB"
+        app:bb_inActiveTabColor="@android:color/holo_green_light"
+        app:bb_tabXmlResource="@xml/bottombar_menu" />
+
+</RelativeLayout>
+
+
+<!--
+bb_tabXmlResource：
+设置标签的 xml 资源标识，在 res/xml/ 目录下。
+
+bb_tabletMode：
+是否是平板模式。true：是；false：不是。
+
+bb_behavior：（三种模式）
+shifting: 选定的标签比其他的更宽。
+shy: 将 Bottombar 放在 Coordinatorlayout 它会自动隐藏在滚动！（需要特定的布局）
+underNavbar: 正常模式（默认）。
+
+bb_inActiveTabAlpha：
+没选中时标签的透明度，icon 和 titiles 有用。（取值：0-1）
+
+bb_activeTabAlpha：
+选中时标签的透明度，与上一个相对应。（取值：0-1）
+
+bb_inActiveTabColor：
+没选时标签的颜色，icon 和 titiles 有用。
+
+bb_activeTabColor：
+选中时标签的颜色，与一个相对应。
+
+bb_badgeBackgroundColor：
+设置 Badges 的背景色，就是右上角显示数字那个。
+
+bb_badgesHideWhenActive：
+小红点是否隐藏，默认为 true 隐藏。就是右上角显示数字那个。
+
+bb_titleTextAppearance：
+利用 style 重新设置自定的格式，例如：大小、加粗等。
+
+bb_titleTypeFace：
+设置自定的字体, 例： app:bb_titleTypeFace="fonts/MySuperDuperFont.ttf"。
+将字体放在 src/main/assets/fonts/MySuperDuperFont.ttf 路径下，
+只需要写 fonts/MySuperDuperFont.ttf 即可，将自动填充。
+
+bb_showShadow：
+控制阴影是否显示或隐藏，类似于蒙板，默认为true。
+
+作者：Wing_Li
+链接：https://www.jianshu.com/p/2bafd1bbb21b
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
+
+-->
+
+<!--
+ app:bb_badgeBackgroundColor="@android:color/holo_orange_light"
+
+-->
