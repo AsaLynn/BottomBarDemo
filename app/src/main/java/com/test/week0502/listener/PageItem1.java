@@ -4,6 +4,7 @@ import android.app.Activity;
 
 import com.example.demonstrate.adapter.testname.p1.w2.BaseT5P1W2ILis;
 import com.test.week0502.activity.Test0Activity;
+import com.test.week0502.activity.Test1Activity;
 
 /**
  * Created by think on 2018/3/13.
@@ -20,6 +21,8 @@ public class PageItem1 extends BaseT5P1W2ILis {
     public Class<?> getStartActivity(int which) {
         if (which == 0) {
             return Test0Activity.class;
+        } else if (which == 1) {
+            return Test1Activity.class;
         }
         return null;
     }

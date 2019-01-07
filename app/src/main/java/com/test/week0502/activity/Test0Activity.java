@@ -46,11 +46,6 @@ public class Test0Activity extends AppCompatActivity {
 
             @Override
             public void onTabSelected(int tabId) {
-                /*//tabId选中的标签id.
-                if (tabId == R.id.tab_favorites) {
-                    // 选择指定 id 的标签
-
-                }*/
                 int index = bottomBar.findPositionForTabWithId(tabId);
                 switch (tabId) {
                     case R.id.tab0://首页

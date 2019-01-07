@@ -4,12 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/contentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomBar" />
-
     <!-- 参数详细解释 稍后会有 -->
     <!--app:bb_badgesHideWhenActive="false"-->
     <com.roughike.bottombar.BottomBar
@@ -22,6 +16,12 @@
         app:bb_activeTabColor="#0FA0FB"
         app:bb_inActiveTabColor="@android:color/holo_green_light"
         app:bb_tabXmlResource="@xml/bottombar_menu" />
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar" />
 
 </RelativeLayout>
 

@@ -22,32 +22,32 @@ public class FragmentFactory {
      * @return
      */
     public static Fragment createFragment(int intId) {//position
-       Fragment fragment = fragmentMap.get(intId);
+        Fragment fragment = fragmentMap.get(intId);
         if (fragment != null) {
             return fragment;
-        } else {
-            switch (intId) {
-                case 0:
-                    //首页
-                    fragment = new Fragment0();
-                    break;
-                case 1:
-                    //财富.wealth
-                    fragment = new Fragment1();
-                    break;
-                case 2:
-                    fragment = new Fragment2();
-                    break;
-                case 3:
-                    fragment = new Fragment3();
-                    break;
-                case 4:
-                    //页面第一页.
-                    fragment = new Fragment4();
-                    break;
-            }
-            fragmentMap.put(intId, fragment);
         }
+
+        switch (intId) {
+            case 0:
+                //首页
+                fragment = new Fragment0();
+                break;
+            case 1:
+                //财富.wealth
+                fragment = new Fragment1();
+                break;
+            case 2:
+                fragment = new Fragment2();
+                break;
+            case 3:
+                fragment = new Fragment3();
+                break;
+            case 4:
+                //页面第一页.
+                fragment = new Fragment4();
+                break;
+        }
+        fragmentMap.put(intId, fragment);
         return fragment;
     }
 
